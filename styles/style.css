@@ -331,6 +331,7 @@ color: var(--hover-color);
     background-color: var(--our-team-color);
     letter-spacing: 0.03em;
     color: var(--main-color);
+    padding: 6px 25px;
 }
 
 .btn:hover{
@@ -345,7 +346,7 @@ color: var(--hover-color);
 
 .goods{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 94px auto;
 }
 
 .goods-list{
@@ -356,7 +357,10 @@ color: var(--hover-color);
 }
 
 .goods-list-item{
-    flex-basis:calc((100% - 30px) / 3);
+   border: 1px solid #EEEEEE;
+   width: 360px;
+  /* ця штука не працює хз чому */
+   /* flex-basis: calc((100%-60px)/3); */
 }
 .dedcription{
     list-style: none;
@@ -386,4 +390,17 @@ color: var(--hover-color);
     line-height: 1.19;
     color: var(--hover-color);
     font-family: 'Raleway';
+}
+
+.portfolio-title{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap; 
+    clip-path: insert(100%);
+    clip: rect (0 0 0 0); 
+    overflow: hidden;
 }
