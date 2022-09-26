@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>WebStudio</title>
 </head>
@@ -31,8 +32,10 @@
     </header>
     <main>
         <section class="header-herro">
-            <h1 class="herro-text">Ефективні рішення для вашого бізнесу</h1>
-            <button class="header-button" type="button">Замовити послугу</button>
+            <div class="text-container">
+                <h1 class="herro-text">Ефективні рішення для вашого бізнесу</h1>
+                <button class="header-button" type="button">Замовити послугу</button>    
+            </div>
         </section>
         <section class="about">
             <h2 class="about-desc">Про нас</h2>
@@ -109,12 +112,12 @@
     </main>
 
     <footer>
-        <a class="footer-logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
         <address>
             <ul class="contacts">
-                <li><a href="https://goo.gl/maps/MCXRP4PtPJVevDJ69" rel="n" class="adress-item footer-curent">м. Київ, пр-т Лесі Українки, 26</a></li>                
-                <li><a class="contact-item footer-curent" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="contact-item footer-curent" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="logo-i"><a class="footer-logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a></li>
+                <li class="contact-item-list"><a href="https://goo.gl/maps/MCXRP4PtPJVevDJ69" rel="n" class="adress-item footer-curent">м. Київ, пр-т Лесі Українки, 26</a></li>                
+                <li class="contact-item-list"><a class="contact-item footer-curent" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contact-item-list"><a class="contact-item footer-curent" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
     </footer>

@@ -1,8 +1,10 @@
-*{ 
-    box-sizing: border-box;
-} 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap'); 
- 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 :root{
     --hover-color:#2196F3;
     --main-color: #212121;
@@ -22,19 +24,20 @@ body {
 } 
  
 .header-top{ 
-    width: 1600px; 
+    width: 1170px; 
+    display: flex;
+    margin: 24px auto 13px;
+    align-items: center;
 } 
  
 .header-menu{ 
     list-style: none; 
-    text-decoration: none;    
+    display: flex;
 } 
  
-.header-menu li{ 
-    text-decoration: none; 
+.header-menu li:not(:last-child){ 
+    margin-right: 50px;
 } 
-
-
  
 .header-link{ 
     text-decoration: none; 
@@ -57,17 +60,21 @@ body {
     font-size: 26px;
     line-height: 1.9;
     color: var(--main-color);
+    margin-right: 93px;
 } 
 
  
 .header-contact-info{ 
     list-style: none; 
     text-decoration: none; 
-    
+    display: flex;
+    margin: auto;
 } 
  
-.header-contact-info li{ 
+.header-contact-info li:first-child{ 
     text-decoration: none; 
+    margin-right: 50px;
+    
 } 
  
 .contact-link{ 
@@ -90,10 +97,22 @@ body {
 }
 .header-herro{ 
     background-color: var(--herro-bg);  
-    width: 1600px; 
-    text-align: center;     
+    width: 1600px;
+    /* height: 600px;  */
+    text-align: center;  
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding: 250px 452px;
+     
 } 
 
+.text-container{
+    width: 696px;
+}
 .about-desc{  
     position: absolute;
     width: 1px;
@@ -121,8 +140,7 @@ body {
     background: var(--hover-color); 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: 4px; 
-    width: 216px; 
-    height: 50px; 
+    padding: 10px 32px;
     color: var(--second-font-color);; 
     border: 0; 
     cursor: pointer;
@@ -133,9 +151,20 @@ body {
     letter-spacing: 0.06em;
 }
 
+
+
 .about-list-main{
-    width: 1170px;
+    width: 1200px;
     list-style: none;
+    display: flex;
+    margin: 94px auto;
+}
+.about-list{
+    width: 270px;
+}
+
+.about-list:not(:last-child){
+    margin-right: 30px;
 }
 
 .about-title{
@@ -151,6 +180,10 @@ body {
     line-height: 1.7;
     color: var(--contact-color);
 }
+.gonna-do{
+    width: 1200px;
+    margin: 0 auto;
+}
 
 
 .gonna-do-title{
@@ -158,10 +191,16 @@ body {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .gonna-do-photos{
     list-style: none;
-    width: 1170px;
+    display: flex;
+}
+
+.gonna-do-photo:not(:last-child){
+    margin-right: 30px;
 }
 
 .team-card{
@@ -173,12 +212,18 @@ body {
 
 .team-cards
 {   list-style: none;
-    width: 1170px;
-    
+    display: flex;    
+}
+.team-card:not(:last-child){
+    margin-right: 30px;
 }
 
 .our-team{
     background-color: var(--our-team-color);
+    padding: 94px 215px;
+    width: 1600px;
+    margin: 0 auto;
+    
 
 }
 .our-team-desc{
@@ -186,6 +231,7 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin-bottom: 50px;
 }
 .team-card img{
     width: 279px;
@@ -209,7 +255,10 @@ body {
 
 footer{
     background-color: var(--herro-bg);
+    width: 1600px;
+    margin: 0 auto;
 }
+
 
 .footer-logo{
     font-family: 'Raleway';
@@ -248,12 +297,25 @@ color: var(--hover-color);
 
 
 .contacts{
+    width: 250px;
     list-style-type: none;
+    margin-left: 215px;
+}
+.logo-i{
+    margin-bottom: 20px;
+}
+.contact-item-list{
+    margin-bottom: 9px;
 }
 
 .button-panel {
     width: 775px;
     list-style: none; 
+    display: flex;
+    margin: 0 auto;
+}
+.btn-item:not(:last-child){
+    margin-right: 8px;
 }
 
 .btn{
@@ -281,9 +343,20 @@ color: var(--hover-color);
     color: var(--second-font-color);
 }
 
+.goods{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .goods-list{
     list-style: none;
-    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.goods-list-item{
+    flex-basis:calc((100% - 30px) / 3);
 }
 .dedcription{
     list-style: none;
