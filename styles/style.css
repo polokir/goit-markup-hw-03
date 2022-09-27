@@ -5,6 +5,8 @@
 }
 
 
+
+
 :root{
     --hover-color:#2196F3;
     --main-color: #212121;
@@ -309,7 +311,7 @@ color: var(--hover-color);
 }
 
 .button-panel {
-    width: 775px;
+    width: 575px;
     list-style: none; 
     display: flex;
     margin: 0 auto;
@@ -320,8 +322,6 @@ color: var(--hover-color);
 
 .btn{
     font-family:'Roboto', serif;
-    min-width: 73px;
-    height: 38px;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -331,7 +331,9 @@ color: var(--hover-color);
     background-color: var(--our-team-color);
     letter-spacing: 0.03em;
     color: var(--main-color);
-    padding: 6px 25px;
+    min-width: 73px;
+    padding: 6px 22px;
+    white-space: nowrap;
 }
 
 .btn:hover{
@@ -350,15 +352,17 @@ color: var(--hover-color);
 }
 
 .goods-list{
+    width: 1200px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap:30px;
+    justify-content: center;
 }
 
 .goods-list-item{
    border: 1px solid #EEEEEE;
-   width: 360px;
+    width: 360px;
   /* ця штука не працює хз чому */
    /* flex-basis: calc((100%-60px)/3); */
 }
