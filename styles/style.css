@@ -313,6 +313,11 @@ footer{
     margin: 0 auto;
 }
 
+.contacts-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 
 .footer-logo{
     font-family: 'Raleway';
@@ -351,9 +356,9 @@ color: var(--hover-color);
 
 
 .contacts{
-    width: 250px;
+    padding: 60px 0 60px 215px;
     list-style-type: none;
-    margin-left: 215px;
+   
 }
 .logo-i{
     margin-bottom: 20px;
@@ -363,10 +368,9 @@ color: var(--hover-color);
 }
 
 .button-panel {
-    width: 575px;
     list-style: none; 
     display: flex;
-    margin: 0 auto;
+    padding: 20px 0;
 }
 .btn-item:not(:last-child){
     margin-right: 8px;
@@ -411,17 +415,18 @@ color: var(--hover-color);
 
 }
 .team-text-container{
-    padding: 10px 0;
+    padding: 10px 0; 
 }
 
 .goods-list-item{
    /* max-width: 370px; */
    border: 1px solid #EEEEEE;
-   outline: 1px solid tomato;
    flex-basis: calc((100% - 60px) / 3);
 }
-.dedcription{
-    list-style: none;
+
+.goods-text-container{
+    margin: 0 auto;
+    padding: 20px 24px;
 }
 
 .good-title{ 
@@ -429,6 +434,7 @@ color: var(--hover-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+   
 }
 
 .good-text{
@@ -447,6 +453,11 @@ color: var(--hover-color);
     line-height: 1.19;
     color: var(--hover-color);
     font-family: 'Raleway';
+}
+
+.btn-container{
+    width: 575px;
+    margin: 0 auto;
 }
 
 .portfolio-title{
