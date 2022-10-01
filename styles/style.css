@@ -55,18 +55,20 @@ button{
  .link{
     text-decoration: none;
  }
-
- .header-container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.header{
     display: flex;
     align-items: center;
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
  
 .header-menu{ 
-    list-style: none; 
     display: flex;
 } 
  
@@ -102,7 +104,6 @@ button{
 
  
 .header-contact-info{ 
-    list-style: none; 
     text-decoration: none; 
     display: flex;
     margin-left: auto;
@@ -146,11 +147,6 @@ button{
      
 } 
 
-.herro-container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 
 .about-desc{  
@@ -195,15 +191,9 @@ button{
     margin: 0 auto;
 }
 
-.about-container{
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-}
 
 .about-list-main{
     display: flex;
-    list-style: none;
 }
 .about-list{
     width: 270px;
@@ -228,11 +218,10 @@ button{
     color: var(--contact-color);
 }
 
-
-.gonna-do-container{
-    width: 1200px;
-    margin: 0 auto;
+.gonna-do{
+    padding-top: 0;
 }
+
 
 
 .gonna-do-title{
@@ -244,7 +233,6 @@ button{
     margin-bottom: 50px;
 }
 .gonna-do-photos{
-    list-style: none;
     display: flex;
 }
 
@@ -254,23 +242,18 @@ button{
 
 .team-card{
     width: 270px;
-    height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--second-font-color);
 }
 
 .team-cards
-{   list-style: none;
+{   
     display: flex;    
 }
 
 .team-card:not(:last-child){
     margin-right: 30px;
-}
-
-.our-team-container{
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .our-team{
@@ -295,7 +278,7 @@ button{
     font-size: 16px;
     line-height: 1.18;
     font-weight: 500;
-    padding: 10px 0;
+    margin-bottom: 10px;
 }
 
 .position{
@@ -309,14 +292,13 @@ button{
 
 footer{
     background-color: var(--herro-bg);
-    width: 1600px;
-    margin: 0 auto;
+    padding: 60px 0;
 }
 
-.contacts-container{
-    width: 1200px;
-    margin: 0 auto;
+address{
+    margin-top: 20px;
 }
+
 
 
 .footer-logo{
@@ -354,24 +336,27 @@ color: var(--hover-color);
     font-style: normal;
 }
 
+.portfolio{
+    border-bottom: 1px solid var(--main-color);
+}
+
 
 .contacts{
-    padding: 60px 0 60px 215px;
-    list-style-type: none;
    
 }
 .logo-i{
     margin-bottom: 20px;
 }
-.contact-item-list{
+.contact-item-list.btn-item:not(:last-child){
     margin-bottom: 9px;
 }
 
 .button-panel {
-    list-style: none; 
     display: flex;
-    padding: 20px 0;
+    justify-content: center;
+    margin-bottom: 50px;
 }
+
 .btn-item:not(:last-child){
     margin-right: 8px;
 }
@@ -401,32 +386,26 @@ color: var(--hover-color);
     background-color: var(--hover-color);
     color: var(--second-font-color);
 }
-.goods-container{
-    width: 1200px;
-    margin: 0 auto;
-   
-}
+
 .goods-list{
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     /* justify-content: center; */
     gap:30px;
 
 }
 .team-text-container{
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 .goods-list-item{
-   /* max-width: 370px; */
-   border: 1px solid #EEEEEE;
-   flex-basis: calc((100% - 60px) / 3);
+   width: 370px;
+   /* flex-basis: calc((100% - 60px) / 3); */
 }
 
 .goods-text-container{
-    margin: 0 auto;
     padding: 20px 24px;
+    border:1px solid #EEEE ;
 }
 
 .good-title{ 
@@ -434,6 +413,7 @@ color: var(--hover-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 10px;
    
 }
 
@@ -455,10 +435,7 @@ color: var(--hover-color);
     font-family: 'Raleway';
 }
 
-.btn-container{
-    width: 575px;
-    margin: 0 auto;
-}
+
 
 .portfolio-title{
     position: absolute;
