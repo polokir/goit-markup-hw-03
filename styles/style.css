@@ -12,6 +12,7 @@
     --herro-bg: #2F303A;
     --our-team-color:#F5F4FA;
     --contact-footer:#FFFFFF99;
+    --portfolio-line-color:#ECECEC;
 }
  
 body { 
@@ -337,7 +338,7 @@ color: var(--hover-color);
 }
 
 .portfolio{
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--portfolio-line-color);
 }
 
 
@@ -347,7 +348,7 @@ color: var(--hover-color);
 .logo-i{
     margin-bottom: 20px;
 }
-.contact-item-list.btn-item:not(:last-child){
+.contact-item-list:not(:last-child){
     margin-bottom: 9px;
 }
 
